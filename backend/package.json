@@ -1,0 +1,22 @@
+{
+  "name": "weapon-detection-email-service",
+  "version": "1.0.0",
+  "description": "Email notification service for weapon detection system",
+  "main": "email_notifier.js",
+  "scripts": {
+    "test": "node send_email.js '{\"class\":\"Gun\",\"confidence\":0.95,\"timestamp\":\"2024-01-01T00:00:00Z\",\"location\":\"CCTV-1\"}'",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "email",
+    "notification",
+    "nodemailer",
+    "weapon-detection"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1"
+  }
+}
